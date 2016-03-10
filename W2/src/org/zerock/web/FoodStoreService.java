@@ -14,6 +14,7 @@ public class FoodStoreService {
 	
 	private List<FoodStore> list;
 	
+	
 	private FoodStoreService(){
 		list = new ArrayList<FoodStore>();
 	}

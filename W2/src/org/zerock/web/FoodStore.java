@@ -4,6 +4,7 @@ public class FoodStore {
 	
 	private String sname;
 	private String lat, lng;
+	
 	public String getSname() {
 		return sname;
 	}
@@ -21,6 +22,11 @@ public class FoodStore {
 	}
 	public void setLng(String lng) {
 		this.lng = lng;
+	}
+	
+	@Override
+	public String toString() {
+		return "FoodStore sname=" + sname ;
 	}
 	
 	

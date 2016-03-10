@@ -7,7 +7,7 @@
 <title>register</title>
 </head>
 <body>
-	<form action="result.jsp" method="post" target="zeroFrame">
+	<form action="result.jsp" method="get" target="zeroFrame">
 		<div>
 			이름<input type='text' name='sname' value="닭갈비">
 		</div>
@@ -22,8 +22,7 @@
 		</div>
 	</form>
 	
-	<iframe name="zeroFrame" style="width:0px; height: 0px; border: 0px;">
-	</iframe>
+	<iframe name="zeroFrame">	</iframe>
 	
 </body>
 </html>

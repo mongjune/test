@@ -1,6 +1,12 @@
+<%@page import="org.zerock.web.FoodStoreService"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@page import="org.zerock.web.*" %>
+   <%  	
+   request.setCharacterEncoding("UTF-8");
+	String num = request.getParameter("num");
+	int nums = Integer.parseInt(num);
+	String str = FoodStoreService.getInstance().getList().get(nums).toString();
+	%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,13 +14,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<%for(int i=0; i < FoodStoreService.getInstance().getList().size(); i++){%>
-<ul>	
-<li><a href="r1.jsp?num=<%=i%>"><%= FoodStoreService.getInstance().getList().get(i)%></a></li>
-</ul>
-	<%}%>
-		
+<h1>하이</h1>
+<%=str %>
 </body>
 </html>
-
